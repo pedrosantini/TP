@@ -1,12 +1,14 @@
-package SistemaEmail;
+//package SistemaEmail;
 
+import java.io.Serializable;
 import java.util.Scanner;
 
-public class Email {
+public class Email implements Serializable{
     private String de;
     private String para;
     private String assunto;
     private String mensagem;
+    private static final long serialVersionUID = -4497795320043108019L;
 
     public Email() {
     }
@@ -72,9 +74,5 @@ public class Email {
         para = "";        
         assunto = "";        
         mensagem = "";        
-    }
-
-
-
-    
+    }    
 }
