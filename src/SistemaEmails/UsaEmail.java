@@ -66,11 +66,12 @@ public class UsaEmail {
                             System.out.println("Nao ha mais espaco na lista! Apague emails");
                         break;
                     case 2:
-                        
+                        int i=0;
                         for (Email email : lista) {
                             if(email != null && !email.getDe().equals("")){
                                 if (email.getPara().equals(nome)) {
-                                    System.out.println(email.getAssunto());
+                                    System.out.println(i+" "+email.getAssunto());
+                                    i++;
                                 }                    
                             }
                         }
